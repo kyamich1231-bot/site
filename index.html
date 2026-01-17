@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>STEP IT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Логотип -->
+    <img src="stepit.png" class="logo" alt="STEP IT">
+
+    <!-- Центральный блок -->
+    <div class="center">
+        <h1>Записывайся в STEP IT или ты отпуеешь</h1>
+        <button class="btn" onclick="showImage()">ЗАПИСАТЬСЯ!</button>
+    </div>
+
+    <!-- Картинка на весь экран -->
+    <div id="overlay">
+        <img src="mem.png" alt="MEM">
+    </div>
+
+    <script>
+        function showImage() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+    </script>
+
+</body>
+</html>
