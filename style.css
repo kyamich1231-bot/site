@@ -12,12 +12,14 @@ body {
     overflow: hidden;
 }
 
-/* Логотип */
+/* Логотип STEP IT */
 .logo {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 90px;
+    top: 20px;
+    left: 20px;
+    width: 130px;              /* больше */
+    border-radius: 25px;       /* овальные края */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 /* Центр */
@@ -31,43 +33,46 @@ body {
 }
 
 .center h1 {
-    margin-bottom: 30px;
-    font-size: 32px;
+    margin-bottom: 40px;
+    font-size: 42px;           /* текст больше */
+    max-width: 800px;
 }
 
 /* Кнопка */
 .btn {
-    padding: 18px 45px;
-    font-size: 22px;
+    padding: 26px 70px;        /* кнопка больше */
+    font-size: 28px;
     border: none;
-    border-radius: 40px;
+    border-radius: 60px;
     cursor: pointer;
     color: white;
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
-    box-shadow: 0 0 20px rgba(255, 75, 43, 0.6);
+    box-shadow: 0 0 30px rgba(255, 75, 43, 0.7);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 35px rgba(255, 75, 43, 0.9);
+    transform: scale(1.12);
+    box-shadow: 0 0 45px rgba(255, 75, 43, 1);
 }
 
-/* Оверлей с картинкой */
+/* Оверлей */
 #overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: rgba(0,0,0,0.85);
     display: none;
     align-items: center;
     justify-content: center;
 }
 
+/* mem.png теперь меньше */
 #overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 65%;               /* уменьшена */
+    max-width: 700px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
 }
